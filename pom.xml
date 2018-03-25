@@ -29,6 +29,7 @@
         <module>monster-zone-service</module>
         <module>monster-zone-entity</module>
         <module>monster-zone-config</module>
+        <module>monster-zone-common</module>
     </modules>
 
     <dependencyManagement>
@@ -47,6 +48,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-tomcat</artifactId>
                 <version>1.5.10.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>4.3.14.RELEASE</version>
             </dependency>
 
             <dependency>
@@ -68,6 +74,16 @@
                 <groupId>com.monster</groupId>
                 <artifactId>monster-zone-config</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.monster</groupId>
+                <artifactId>monster-zone-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.6</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
