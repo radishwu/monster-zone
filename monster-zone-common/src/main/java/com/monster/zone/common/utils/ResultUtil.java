@@ -1,7 +1,8 @@
 package com.monster.zone.common.utils;
 
 import com.monster.zone.common.entity.Result;
-import com.sun.istack.internal.NotNull;
+
+import javax.validation.constraints.NotNull;
 
 public class ResultUtil {
 

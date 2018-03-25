@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.monster.zone.dao.mapper.BooksMapper">
+    <resultMap id="baseResultMap" type="com.monster.zone.domain.entity.BookEntity">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="user_id" column="userId" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="cover" column="cover" jdbcType="VARCHAR"/>
+        <result property="author" column="author" jdbcType="VARCHAR"/>
+        <result property="translator" column="translator" jdbcType="VARCHAR"/>
+        <result property="price" column="price" jdbcType="BIGINT"/>
+        <result property="press" column="press" jdbcType="VARCHAR"/>
+        <result property="intro" column="intro" jdbcType="VARCHAR"/>
+        <result property="type" column="type" jdbcType="TINYINT"/>
+        <result property="created_time" column="createdTime" jdbcType="TIMESTAMP"/>
+        <result property="updated_time" column="updatedTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="columns">
+        id,
+        name,
+        cover,
+        author,
+        translator,
+        price,
+        press,
+        intro,
+        type,
+        created_time,
+        updated_time
+    </sql>
+
+    <sql id="table">
+        monster_books
+    </sql>
+
+    <select id="listBooks" resultMap="baseResultMap">
+        SELECT
+        <include refid="columns"/>
+        FROM
+        <include refid="table"/>
+        WHERE user_id = #{userId} AND is_deleted = 0
+    </select>
+
+</mapper>

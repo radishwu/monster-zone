@@ -22,11 +22,19 @@
         </dependency>
         <dependency>
             <groupId>com.monster</groupId>
-            <artifactId>monster-zone-entity</artifactId>
+            <artifactId>monster-zone-domain</artifactId>
         </dependency>
         <dependency>
             <groupId>com.monster</groupId>
             <artifactId>monster-zone-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.monster</groupId>
+            <artifactId>monster-zone-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>

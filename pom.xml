@@ -27,9 +27,10 @@
     <modules>
         <module>monster-zone-web</module>
         <module>monster-zone-service</module>
-        <module>monster-zone-entity</module>
+        <module>monster-zone-domain</module>
         <module>monster-zone-config</module>
         <module>monster-zone-common</module>
+        <module>monster-zone-dao</module>
     </modules>
 
     <dependencyManagement>
@@ -67,7 +68,7 @@
             </dependency>
             <dependency>
                 <groupId>com.monster</groupId>
-                <artifactId>monster-zone-entity</artifactId>
+                <artifactId>monster-zone-domain</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -81,9 +82,19 @@
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
+                <groupId>com.monster</groupId>
+                <artifactId>monster-zone-dao</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.16.6</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.39</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
