@@ -16,6 +16,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.monster</groupId>
+            <artifactId>monster-zone-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.monster</groupId>
+            <artifactId>monster-zone-dao</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

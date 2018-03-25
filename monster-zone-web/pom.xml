@@ -33,6 +33,10 @@
             <artifactId>monster-zone-dao</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.monster</groupId>
+            <artifactId>monster-zone-common</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>

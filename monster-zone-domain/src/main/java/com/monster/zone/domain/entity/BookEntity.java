@@ -1,10 +1,10 @@
 package com.monster.zone.domain.entity;
 
+import java.util.Date;
+
 public class BookEntity {
 
     private Long id;
-
-    private Long userId;
 
     private String name;
 
@@ -22,9 +22,9 @@ public class BookEntity {
 
     private Integer type;
 
-    private Long createdTime;
+    private Date createdTime;
 
-    private Long updatedTime;
+    private Date updatedTime;
 
     public Long getId() {
         return id;
@@ -32,14 +32,6 @@ public class BookEntity {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
     }
 
     public String getName() {
@@ -106,19 +98,19 @@ public class BookEntity {
         this.type = type;
     }
 
-    public Long getCreatedTime() {
+    public Date getCreatedTime() {
         return createdTime;
     }
 
-    public void setCreatedTime(Long createdTime) {
+    public void setCreatedTime(Date createdTime) {
         this.createdTime = createdTime;
     }
 
-    public Long getUpdatedTime() {
+    public Date getUpdatedTime() {
         return updatedTime;
     }
 
-    public void setUpdatedTime(Long updatedTime) {
+    public void setUpdatedTime(Date updatedTime) {
         this.updatedTime = updatedTime;
     }
 }
