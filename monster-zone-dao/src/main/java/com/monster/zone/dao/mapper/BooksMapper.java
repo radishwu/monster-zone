@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface BooksMapper {
 
-    List<BookEntity> listBooks(@Param("userId") Long userId);
+    List<BookEntity> listBooks(@Param("userId") Long userId, @Param("page") int page, @Param("pageSize") int pageSize);
 }

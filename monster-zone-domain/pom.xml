@@ -20,6 +20,10 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.monster</groupId>
+            <artifactId>monster-zone-common</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
